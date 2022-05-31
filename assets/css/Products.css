@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 34px 0;
+}
+
+header .menu {
+    margin: auto 0;
+}
+
+header .menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+header .menu li a {
+    font-weight: 700;
+    color: #5D5D5D;
+    padding: 0 16px;
+}
+
+header .menu li a:hover {
+    color: #F54748;
+}
+
+header .sign {
+    display: flex;
+}
+
+header .sign .card {
+    margin: auto 0;
+}
+
+header .sign .sign-in {
+    margin: 0 20px;
+    border: 1px solid #F54748;
+    background-color: #fff;
+    color: #F54748;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+header .sign .sign-up {
+    background-color: #F54748;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}
+
+/* Content */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 40px;
+}
+
+.banner {
+    padding-bottom: 42px;
+}
+
+.sidebar li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+}
+
+.main-item img {
+    border-radius: 15px;
+}
+
+.main-item .item-title {
+    font-weight: 600;
+    padding: 12px 0;
+}
+
+.itemain-itemm .item-title a:hover {
+    color: #F54748;
+}
+
+.main-item .item-price {
+    color: #F54748;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-item button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #111928;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Footer */
+hr {
+    color: #5D5D5D;
+    margin-top: 74px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+footer .menu {
+    margin: auto 0;
+}
+
+footer .menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+footer .menu li a {
+    font-weight: 700;
+    color: #5D5D5D;
+    padding: 0 16px;
+}
+
+footer .menu li a:hover {
+    color: #F54748;
+}
