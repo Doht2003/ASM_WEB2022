@@ -429,25 +429,13 @@ footer .menu li a:hover {
 }
 
 @media (max-width: 1279px) {
-    .container {
-        max-width: 1240px;
-        margin: 0 auto;
-        margin: 35px;
-    } 
+
 }
 
 @media (max-width: 1535px) {
-    .container {
-        max-width: 1240px;
-        margin: 0 auto;
-        margin: 35px;
-    } 
+
 }
 
 @media (min-width: 1536px) {
-    .container {
-        max-width: 1240px;
-        margin: 0 auto;
-        margin: 35px;
-    } 
+
 }
