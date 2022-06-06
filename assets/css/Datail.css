@@ -74,30 +74,31 @@ header .sign .sign-in {
 header .sign .sign-up {
     background-color: #F54748;
     color: #fff;
-    padding: 0 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     border: none;
     font-weight: 600;
 }
+
 
 /* Content */
 .content {
     padding: 10px 0;
 }
 
-.content .header-content{
+.content .header-detail{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     margin: 100px 0;
 }
 
-.header-content .content-title_header {
+.header-detail .content-title_header {
     font-size: 40px;
     font-weight: 900;
 }
 
-.header-content .content-quanlity {
+.header-detail .content-quanlity {
     font-size: 40px;
     font-weight: 600;
     color: #F54748;
@@ -124,13 +125,13 @@ header .sign .sign-up {
     border: none;
 }
 
-.main-content .main-content__title{
+.main-detail .main-detail__title{
     font-weight: 700;
     font-size: 24;
     margin: 32px 0;
 }
 
-.main-content .main-item {
+.main-detail .main-item {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 40px;

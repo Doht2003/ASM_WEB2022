@@ -164,6 +164,12 @@ header .sign .sign-up {
     color: #000 !important;
 }
 
+.filter select{
+    margin-top: 30px;
+    width: 150px;
+    padding: 10px 5px;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -192,8 +198,9 @@ header .sign .sign-up {
     display: flex;
 }
 
-.main-item .detail div i {
-    padding-right: 8px;
+.main-item .detail img {
+    margin-right: 5px;
+    width: 17px;
 }
 
 .main-item .detail p {
@@ -272,7 +279,7 @@ form p{
     border: 1px solid #5D5D5D;
 }
 
-select {
+.information-input select {
     width: 100%;
     padding: 18px 20px;
     border-radius: 5px;
@@ -337,7 +344,10 @@ footer .menu li a:hover {
 
 /* Responsive */
 @media(max-width: 767px) {
-
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 8px;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -429,7 +439,16 @@ footer .menu li a:hover {
 }
 
 @media (max-width: 1279px) {
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+    }
 
+    .container {
+        max-width: 1240px;
+        margin: 0 auto;
+        margin: 35px;
+    }
 }
 
 @media (max-width: 1535px) {
