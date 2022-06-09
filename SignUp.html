@@ -22,25 +22,30 @@
             <p class="title1">Welcome to Fudo</p>
             <p class="title2">Create Account</p>
         </div>
-        <form action="">
+        <form action="" onsubmit="return validateForm()">
             <div class="email">
                 <p>Email</p>
-                <input type="email" placeholder="John.snow@gmail.com" required>
+                <input type="text" name="email" placeholder="John.snow@gmail.com">
+                <span></span>
             </div>
             <div class="name">
                 <p>Fullname</p>
-                <input type="text" placeholder="John.snow" required>
+                <input type="text" name="name" placeholder="John.snow">
+                <span></span>
             </div>
             <div class="password">
                 <p>Password</p>
-                <input type="password" name="" id="" placeholder="*********" required>
+                <input type="password" name="password" placeholder="*********">
+                <span></span>
             </div>
             <div class="re-pssword">
                 <p>Re-Password</p>
-                <input type="password" name="" id="" placeholder="*********" required>
+                <input type="password" name="re-pssword" placeholder="*********">
+                <span></span>
             </div>
-            <div class="create"><button>Create Now</button></div>
+            <div class="create"><button type="submit">Create Now</button></div>
         </form>
     </div>
+    <script src="./js/SignUp.js"></script>
 </body>
 </html>

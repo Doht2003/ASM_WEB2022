@@ -302,13 +302,17 @@ form .submit {
     padding: 12px;
 }
 
-form .submit input {
+form .submit button {
     background-color: #000;
     color: #fff;
     padding: 15px 50px;
     border-radius: 5px;
     font-weight: 500;
     cursor: pointer;
+}
+
+#span {
+    font-size: 12px;
 }
 
 hr {

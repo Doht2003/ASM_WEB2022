@@ -76,3 +76,7 @@ form input {
     margin: 30px 0 15px 0;
     font-weight: 600;
 }
+
+span {
+    font-size: 12px;
+}

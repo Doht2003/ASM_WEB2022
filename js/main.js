@@ -1,4 +1,4 @@
-const ListProduct = [
+let ListProduct = [
     {
         id: 1,
         name: "Big and Juicy Wagyu Beef Cheeseburger",
@@ -49,7 +49,11 @@ const ListProduct = [
     }
 ]
 
-const ListCategory = [
+let ListCategory = [
+    {
+        id: "all",
+        name: "Tất cả",
+    },
     {
         id:1,
         name:"breakfast",
@@ -80,7 +84,7 @@ const ListCategory = [
         name:"chocolate",
         image:"./assets/img/1_6.png"
     }
-]
+];
 
 function showProduct(data) {
     const popularList = document.querySelector(".main-content");
@@ -151,20 +155,73 @@ function detailProduct() {
     const product = ListProduct.find(function(item){
         return item.id == productID;
     });
-    console.log(product);
+    // console.log(product);
     const detailProductDiv = document.querySelector('.header-detail');
-    detailProductDiv.innerHTML = `
-        <div class="content-title">
-            <p class="content-title_header">${product.name}</p>
-            <p class="content-quanlity">$${product.price}</p>
-            <p>${product.desc}</p>
-            <form action="">
-                <input type="text" placeholder="Quantity" required>
-                <button>Add To Cart</button>
-            </form>
-        </div>
-        <div class="banner"><img src="${product.image}" alt=""></div>
-        
-    `
+    if(detailProductDiv) {
+        detailProductDiv.innerHTML = `
+            <div class="content-title">
+                <p class="content-title_header">${product.name}</p>
+                <p class="content-quanlity">$${product.price}</p>
+                <p>${product.desc}</p>
+                <form action="">
+                    <input type="text" placeholder="Quantity" required>
+                    <button>Add To Cart</button>
+                </form>
+            </div>
+            <div class="banner"><img src="${product.image}" alt=""></div>
+            
+        `
+    }
 }
 detailProduct();
+
+function listCategory() {
+    for (const item of ListCategory) {
+        document.querySelector(".sidebar").innerHTML += `
+            <li><a href="./Products.html?cateID=${item.id} "onclick="reRender(${item.id});event.preventDefault()">${item.name}</a></li>
+        `
+    }
+}
+listCategory();
+
+const listProductDiv = document.querySelector('.main-product');
+function listProductPage(data) {
+    if (listProductDiv) {
+        listProductDiv.innerHTML = "";
+        for (const item of data) {
+            listProductDiv.innerHTML += `
+                <div class="main-item">
+                    <a href="./Detail.html?id=${item.id}"><img src="${item.image}" alt=""></a>
+                    <p class="item-title"><a href="">${item.name}</a></p>
+                    <p class="item-price">$${item.price}</p>
+                    <button class="add">Add To Cart</button>
+                </div>
+            `
+        }
+    }
+}
+listProductPage(ListProduct);
+
+// function reRender(){
+//     const cateId = new URLSearchParams(window.location.search).get('cateId')
+//     const filterCategory = ListProduct.filter(function(item){
+//         return item.category == cateId
+//     })
+//     if(cateId){
+//         listProductPage(filterCategory)
+//     }else{
+//         listProductPage(ListProduct)
+//     }
+// }
+// reRender()
+
+function reRender(cateId){
+    if(cateId === "all") {
+        listProductPage(ListProduct);
+    } else {
+        const filterCategory = ListProduct.filter(function(item){
+            return item.category == cateId
+        });
+        listProductPage(filterCategory)
+    }
+}

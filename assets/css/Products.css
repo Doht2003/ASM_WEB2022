@@ -99,7 +99,7 @@ header .sign .sign-up {
     line-height: 40px;
 }
 
-.main {
+.main-product {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 40px;

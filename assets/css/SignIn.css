@@ -115,3 +115,7 @@ form .password input {
     display: inline-flex;
     margin: 16px 0;
 }
+
+span {
+    font-size: 12px;
+}

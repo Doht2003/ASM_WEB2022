@@ -22,16 +22,18 @@
             <p class="title1">Welcome back</p>
             <p class="title2">Login to your account</p>
         </div>
-        <form action="">
+        <form action="" onsubmit="return validateForm()">
             <div class="email">
                 <p>Email</p>
-                <input type="email" placeholder="John.snow@gmail.com" required>
+                <input type="text" placeholder="John.snow@gmail.com">
+                <span></span>
             </div>
             <div class="password">
                 <p>Password</p>
-                <input type="password" name="" id="" placeholder="*********" required>
+                <input type="password"  placeholder="*********">
+                <span></span>
             </div>
-            <div class="login"><button>Login now</button></div>
+            <div class="login"><button type="submit">Login now</button></div>
             <div class="login-email">
                 <button>
                     <img src="./assets/img/logo_gg.png" alt="">
@@ -47,5 +49,6 @@
             </div>
         </form>
     </div>
+    <script src="./js/SignIn.js"></script>
 </body>
 </html>
