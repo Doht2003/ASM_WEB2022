@@ -165,3 +165,47 @@ footer .menu li a {
 footer .menu li a:hover {
     color: #F54748;
 }
+
+/* Responsive */
+@media (max-width: 767px) {
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 8px;
+    }
+
+    .container {
+        padding: 0 35px;
+        margin: 0 auto;
+    }    
+
+    .main-product {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 55px 2fr;
+        grid-gap: 30px;
+    }
+
+    .sidebar li {
+        list-style-type: none;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 0 35px;
+        margin: 0 auto;
+    }  
+}

@@ -352,16 +352,176 @@ footer .menu li a:hover {
         font-family: 'Inter', sans-serif;
         font-size: 8px;
     }
+
+    .container {
+        margin: 0 auto;
+        margin: 35px;
+    }    
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .sign .sign-in {
+        margin: 0 20px;
+        border: 1px solid #F54748;
+        background-color: #fff;
+        color: #F54748;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    header .sign .sign-up {
+        background-color: #F54748;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        font-weight: 600;
+    }
+
+    /* Content */
+    .content .header-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        padding-top: 30px;
+    }
+
+    .header-content .title-header .header-title {
+        font-weight: 900;
+        font-size: 55px;
+        line-height: 65px;
+        padding-top: 32px;
+    }
+
+    .header-content .title-header .location input {
+        width: 250px;
+        padding: 10px 20px;
+        border: 1px solid #F54748;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .header-content button {
+        border: none;
+        background-color: #F54748;
+        color: #fff;
+        border-radius: 0px 5px 5px 0px;
+        padding: 10px 20px;
+    }
+
+    .main .header-main {
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header-main__title {
+        padding: 20px;
+        font-weight: 700;
+        font-size: 30px !important;
+        color: #000 !important;
+    }
+    
+    .category .category-main {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+        text-align: center;
+    }
+
+    .category-header .category-title {
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .category .category-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+
+    .filter select {
+        margin-top: 30px;
+        width: 100px;
+        padding: 10px 5px;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        margin: 30px 0;
+    }
+
+    .category-header .category-btn {
+        margin: 0 20px;
+        border: 1px solid #F54748;
+        background-color: #fff;
+        color: #F54748;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    .category .category-main img {
+        width: 100%;
+        margin: 30px 0 10px 0;
+    }
+
+    .contact .contact-title {
+        padding: 44px;
+        font-weight: 700;
+        font-size: 38px;
+        color: #000;
+        text-align: center;
+    }
+
+    .contact .information {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+    form p {
+        color: rgba(0, 0, 0, 0.6);
+        text-transform: uppercase;
+        padding: 12px 0;
+    }
+
+    footer {
+        display: inline-block;
+        margin: 25px 0;
+        text-align: center;
+    }
+
+    footer .logo img {
+        width: 50px;
+        text-align: center;
+    }
+
+    footer .menu li {
+        text-align: center;
+    }
+
+    footer .menu li a {
+        font-weight: 700;
+        color: #5D5D5D;
+        padding: 0 10px;
+        font-size: 14px;
+    }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 770px) and (max-width: 1023px) {
     body {
         font-family: 'Inter', sans-serif;
         font-size: 15px;
     }
 
     .container {
-        max-width: 1240px;
         margin: 0 auto;
         margin: 35px;
     }    
@@ -407,7 +567,7 @@ footer .menu li a:hover {
     }
 
     .header-content .title-header .location input {
-        width: 300px;
+        width: 250px;
         padding: 10px 20px;
         border: 1px solid #F54748;
         border-radius: 5px 0 0 5px;
@@ -430,14 +590,21 @@ footer .menu li a:hover {
     .header-main__title {
         padding: 20px;
         font-weight: 700;
-        font-size: 40px !important;
+        font-size: 30px !important;
         color: #000 !important;
     }
     
+     .category .category-main {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap: 50px;
+        text-align: center;
+    }
+
     .category .category-main {
         display: grid;
         grid-template-columns: repeat(6,1fr);
-        grid-gap: 40px;
+        grid-gap: 60px;
         text-align: center;
     }
 }

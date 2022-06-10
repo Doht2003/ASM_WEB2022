@@ -51,10 +51,6 @@ let ListProduct = [
 
 let ListCategory = [
     {
-        id: "all",
-        name: "Tất cả",
-    },
-    {
         id:1,
         name:"breakfast",
         image:"./assets/img/1_1.png"
