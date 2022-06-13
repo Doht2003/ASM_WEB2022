@@ -166,7 +166,8 @@ footer .menu li a {
 footer .menu li a:hover {
   color: #F54748;
 }
-  
+
+  /* Responsive */
 @media (max-width: 767px) {
   body {
       font-family: 'Inter', sans-serif;
